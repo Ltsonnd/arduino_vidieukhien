@@ -15,15 +15,7 @@ void setup() {
   TrangThai_Truoc=1;
 
 }
-void hx0()
-{
-  TrangThai_HienTai = digitalRead(x0);
-  if (TrangThai_Truoc == 1 && TrangThai_HienTai == 0){
-        TrangThai_Led =~ TrangThai_Led;
-    }
-  digitalWrite(y0,TrangThai_Led);
-  TrangThai_Truoc = TrangThai_HienTai;
-}
+
 void hx1()
 {
   HienTai = digitalRead(x1);
@@ -35,6 +27,5 @@ void hx1()
 }
 void loop() 
 {
-hx0();
 hx1();
 }
